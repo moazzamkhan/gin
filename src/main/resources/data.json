@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "property": "name",
+    "value": "Moazzam Khan",
+    "type": "Text",
+    "valueOf": null
+  },
+  {
+    "id": 1,
+    "property": "name",
+    "value": "Barry Allen",
+    "type": "Text",
+    "valueOf": null
+  },
+  {
+    "id": 2,
+    "property": "name",
+    "value": "Bruce Wayne",
+    "type": "Text",
+    "valueOf": null
+  }
+]

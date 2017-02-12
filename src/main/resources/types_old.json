@@ -1,0 +1,148 @@
+{
+  "string": null,
+  "boolean": null,
+  "number": null,
+  "date": [
+    {
+      "property": "date",
+      "type": "number"
+    },
+    {
+      "property": "month",
+      "type": "number"
+    },
+    {
+      "property": "year",
+      "type": "number"
+    },
+    {
+      "property": "hours",
+      "type": "number"
+    },
+    {
+      "property": "minutes",
+      "type": "number"
+    },
+    {
+      "property": "seconds",
+      "type": "number"
+    },
+    {
+      "property": "milliseconds",
+      "type": "number"
+    }
+  ],
+  "address":[
+{
+  "property": "country",
+  "type": "string"
+},{
+      "property": "region(state/province)",
+      "type": "string"
+    },{
+      "property": "city",
+      "type": "string"
+    },{
+      "property": "zipcode/pincode",
+      "type": "string"
+    },{
+      "property": "street",
+      "type": "string"
+    },{
+      "property": "house/flat number",
+      "type": "string"
+    }]
+{
+  "property": "firstName",
+  "type": "string",
+  "value": "",
+  "label": "personalInformation",
+  "valueOf": ""
+},
+{"property": "middleName", "type": "string", "value": "", "label": "personalInformation", "valueOf": ""},
+{
+"property": "lastName", "type": "string", "value": "", "label": "personalInformation", "valueOf": ""
+},
+{
+"property": "dateOfBirth", "type": "string", "value": "", "label": "personalInformation", "valueOf": ""
+},
+{
+"property": "displayPicture", "type": "string", "value": "", "label": "personalInformation", "valueOf": ""
+},
+{
+"property": "urls", "type": "url[]", "value":[{"label": "", "value": ""}], "label": "personalInformation", "valueOf": ""},
+{"property": "address", "type": "address[]", "value":[{"label": "", "value": {"country": "", "region(state/province)": "", "city": "", "street": "", "zipcode/pincode": "", "house/flat number": ""}}], "label": "contactInfo", "valueOf": ""},
+{"property": "mobiles", "type": "mobile[]", "value":[{}], "label": "", "valueOf": ""},
+{"property": "", "type": "string", "value": "", "label": "", "valueOf": ""},
+{
+"contactInfo:label": {
+"addresses:address[]": [
+{
+"label": "",
+"value": {
+"country": "",
+"region(state/province)": "",
+"city": "",
+"street": "",
+"house/flat number": ""
+}
+}
+],
+"phones:label": {
+"mobiles:mobile[]": [
+{
+"label:string": "",
+"value": {
+"countryCode:string": "",
+"number:string": ""
+}
+}
+],
+"telephones:telephone[]": [
+{
+"label": "",
+"value": {
+"countryCode": "",
+"areaCode": "",
+"number": ""
+}
+}
+]
+},
+"emails:email[]": [
+{
+"label": "",
+"value": ""
+}
+],
+"IMs:string[]": [],
+"socialProfile:string[]": []
+},
+"contacts(with relations/roles(doctor, solicitor, etc):contact": [],
+"banks:label": {
+"Account:BankAccount": [],
+"Debit_Card": [],
+"Credit_Card": []
+},
+"pictures": [],
+"identity_cards(Passport(with scanned copy), Driving License)": [],
+"dates(important - aniversary)": "",
+"reminders(Events(Medical Checkup etc))": [],
+"notes(steps to do something, recipes etc, how to)": [],
+"medical": {
+},
+"Tailoring(waist, pants length)": {
+},
+"bookmarks": [],
+"documents(Marksheets, etc)": [],
+"favorites": "favorite color, favorite country",
+"wishlist": {
+"to buy()flipkart, amazon links": "",
+"places to visit": "",
+"things to do": [],
+"dreams": []
+},
+"Web Accounts(username/email, passwords, url, name)": [],
+"Monthly planner(home budget)": ""
+}
+]

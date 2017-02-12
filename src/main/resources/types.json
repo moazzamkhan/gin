@@ -1,0 +1,61 @@
+{
+  "string": null,
+  "boolean": null,
+  "number": null,
+  "date": [
+    {
+      "property": "date",
+      "type": "number"
+    },
+    {
+      "property": "month",
+      "type": "number"
+    },
+    {
+      "property": "year",
+      "type": "number"
+    },
+    {
+      "property": "hours",
+      "type": "number"
+    },
+    {
+      "property": "minutes",
+      "type": "number"
+    },
+    {
+      "property": "seconds",
+      "type": "number"
+    },
+    {
+      "property": "milliseconds",
+      "type": "number"
+    }
+  ],
+  "address": [
+    {
+      "property": "country",
+      "type": "string"
+    },
+    {
+      "property": "region(state/province)",
+      "type": "string"
+    },
+    {
+      "property": "city",
+      "type": "string"
+    },
+    {
+      "property": "zipcode/pincode",
+      "type": "string"
+    },
+    {
+      "property": "street",
+      "type": "string"
+    },
+    {
+      "property": "house/flat number",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "personalInfo": {
+    "firstName": "",
+    "middleName": "",
+    "lastName": "",
+    "dateOfBirth": "",
+    "displayPicture": "",
+    "urls": []
+  },
+  "contactInfo": {
+    "addresses": [
+      {
+        "country": "",
+        "region(state/province)": "",
+        "city": "",
+        "street": "",
+        "house/flat number": ""
+      }
+    ],
+    "phones": {
+      "mobiles": [
+        {
+          "label": "",
+          "countryCode": "",
+          "mobileNumber": []
+        }
+      ],
+      "telephones": [
+        {
+          "label": "",
+          "countryCode": "",
+          "areaCode": "",
+          "phoneNumber": ""
+        }
+      ]
+    },
+    "emails": [
+      {
+        "label": "",
+        "email": {}
+      }
+    ],
+    "IMs": [],
+    "socialProfile": []
+  },
+  "contacts(with relations/roles(doctor, solicitor, etc)": [],
+  "banks": {
+    "Account": [],
+    "Debit_Card": [],
+    "Credit_Card": []
+  },
+  "pictures": [],
+  "identity_cards(Passport(with scanned copy), Driving License)": [],
+  "dates(important - aniversary)": "",
+  "reminders(Events(Medical Checkup etc))": [],
+  "notes(steps to do something, recipes etc, how to)": [],
+  "medical": {},
+  "Tailoring(waist, pants length)": {},
+  "bookmarks": [],
+  "documents(Marksheets, etc)": [],
+  "favorites": "favorite color, favorite country",
+  "wishlist": {
+    "to buy()flipkart, amazon links",
+    "places to visit",
+    "things to do": [],
+    "dreams": []
+  },
+  "Web Accounts(username/email, passwords, url, name)": [],
+  "Monthly planner(home budget)": ""
+}
