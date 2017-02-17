@@ -10,13 +10,22 @@ import java.util.Map;
 public class Property {
     private String name;
     private String type;
+    private String constraints;
+    private String description;
 
     public Property() {
+    }
+
+    public Property(String name, String type, String description) {
+        this.name = name;
+        this.type = type;
+        this.description = description;
     }
 
     public Property(String name, String type) {
         this.name = name;
         this.type = type;
+        this.description = "";
     }
 
     public Property(Map.Entry<String, JsonNode> entry) {
@@ -38,5 +47,21 @@ public class Property {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getConstraints() {
+        return constraints;
+    }
+
+    public void setConstraints(String constraints) {
+        this.constraints = constraints;
     }
 }

@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 }
 
-let Application = connect(mapStateToProps,
+let ThingContainer = connect(mapStateToProps,
     mapDispatchToProps)(ThingComponent)
 
-export default Application
+export default ThingContainer

@@ -7,9 +7,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by moazzamkhan on 12/02/17.
- */
 public class Type {
     private String name;
     private List<Property> properties;
