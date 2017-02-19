@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Text",
+    "namespace": "me.moazzam.types"
+  },
+  {
+    "name": "Number",
+    "namespace": "me.moazzam.types"
+  },
+  {
+    "name": "Boolean",
+    "namespace": "me.moazzam.types"
+  },
+  {
+    "name": "Date",
+    "namespace": "me.moazzam.types",
+    "properties": [
+      {
+        "name": "date",
+        "type": "Number",
+        "multiple":true
+      },
+      {
+        "name": "month",
+        "type": "Number"
+      },
+      {
+        "name": "year",
+        "type": "Number"
+      }
+    ]
+  },
+  {
+    "name": "DateTime",
+    "namespace": "me.moazzam.types",
+    "properties": [
+      {
+        "name": "hours",
+        "type": "Number"
+      },
+      {
+        "name": "seconds",
+        "type": "Number"
+      },
+      {
+        "name": "milliseconds",
+        "type": "Number"
+      },
+      {
+        "name": "date",
+        "type": "Number"
+      },
+      {
+        "name": "month",
+        "type": "Number"
+      },
+      {
+        "name": "year",
+        "type": "Number"
+      }
+    ]
+  },
+  {
+    "name": "Time",
+    "namespace": "me.moazzam.types",
+    "properties": [
+      {
+        "name": "hours",
+        "type": "Number"
+      },
+      {
+        "name": "seconds",
+        "type": "Number"
+      },
+      {
+        "name": "milliseconds",
+        "type": "Number"
+      }
+    ]
+  }
+]

@@ -1,18 +1,34 @@
 import React from "react";
-import {Segment, Form, Button, Header} from "semantic-ui-react";
+import {connect} from "react-redux"
+import {addType} from "../actions"
+import {Container, Divider, Form, Button, Header} from "semantic-ui-react";
 
-const TypesHome = () => (
-    <Segment.Group>
-        <Header as="h3" attached={"top"}>Add type</Header>
-        <Segment>
-            <Form>
-                <Form.Group inline>
-                    <Form.Field label="me.moazzam.types." control='input' placeholder='Type'/>
-                    <Button type='submit' icon="add" circular color={"purple"}/>
-                </Form.Group>
-            </Form>
-        </Segment>
-    </Segment.Group>
+const TypesHome = ({onSubmit}) => (
+    <Container>
+        <Header as="h3" color="purple" textAlign={"right"}>Add type</Header>
+        <Divider/>
+        <Form onSubmit={onSubmit}>
+            <Form.Group inline>
+                <Form.Field label="me.moazzam.types." name="name" control='input' placeholder='Type'/>
+                <Button type='submit' icon="add" circular color="purple"/>
+            </Form.Group>
+        </Form>
+    </Container>
 )
 
-export default TypesHome
+const mapStateToProps = (state, ownProps) => {
+    return state
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        onSubmit: (e, {formData}) => {
+            e.preventDefault()
+            console.log(formData)
+            dispatch(addType(formData.name))
+        }
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(TypesHome)

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "firstName",
+    "type": "Text",
+    "value": "",
+    "category": "Personal Information"
+  },
+  {
+    "name": "middleName",
+    "type": "Text",
+    "value": "",
+    "category": "Personal Information"
+  },
+  {
+    "name": "lastName",
+    "type": "Text",
+    "value": "",
+    "category": "Personal Information"
+  },
+  {
+    "name": "dateOfBirth",
+    "type": "Date",
+    "value": "",
+    "category": "Important Dates"
+  }
+]

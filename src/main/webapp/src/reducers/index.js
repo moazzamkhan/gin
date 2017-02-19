@@ -1,30 +1,32 @@
 import {combineReducers} from "redux";
+import typeList from "./defaultTypes"
+import thingList from "./thingList"
 
 
-const things = (state = [], action) => {
+const things = (state = thingList, action) => {
     switch (action.type) {
         default:
             return state
     }
 }
 
-const typeList = [
-    {name: "string", "namespace": "me.moazzam.types"},
-    {name: "number", "namespace": "me.moazzam.types"},
-    {name: "boolean", "namespace": "me.moazzam.types"},
-    {
-        name: "date",
-        "namespace": "me.moazzam.types",
-        properties: [{name: "date", "type": "number"},
-            {name: "month", "type": "number"},
-            {name: "year", "type": "number"}]
-    }]
+
 
 const types = (state = typeList, action) => {
     switch (action.type) {
         case"ADD_TYPE":
-            console.log([...state, action.payload])
-            return [...state, action.payload]
+            return [...state, {name: action.payload, namespace: "me.moazzam.types"}]
+        case"ADD_PROPERTY":
+            return state.map((type) => {
+                if (action.payload.type === type.name) {
+                    return {
+                        name: type.name,
+                        properties: (type.properties || []).concat(action.payload.properties)
+                    }
+                } else {
+                    return type
+                }
+            })
         default:
             return state
     }

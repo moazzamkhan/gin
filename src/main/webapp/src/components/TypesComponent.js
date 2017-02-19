@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import NavLink from "./NavLink";
-import {Grid, Menu, Segment} from "semantic-ui-react";
+import {Grid, Menu, Segment, List} from "semantic-ui-react";
 
 const TypesComponent = ({types, children}) => (
     <Segment>
@@ -36,10 +36,5 @@ const mapDispatchToProps = (dispatch, ownProps) => {
             console.log(this)
         }
     }
-}
-
-
-const handleItemClick = (e, name) => {
-    console.log(`/types/${name}`)
 }
 export default connect(mapStateToProps, mapDispatchToProps)(TypesComponent)

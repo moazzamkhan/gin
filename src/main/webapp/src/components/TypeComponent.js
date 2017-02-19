@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 import {connect} from "react-redux";
 
 const TypeComponent = ({type}) => (
-    <Table attached>
+    <Table>
         <Table.Header>
             <Table.Row><Table.HeaderCell colSpan={2}>
                 <Header as='h3'>{type.name}<Header.Subheader>{type.namespace}</Header.Subheader>
@@ -39,7 +39,7 @@ const TypeComponent = ({type}) => (
                         to={`/types/${type.name}/properties/${p.name}`}>{p.name}</NavLink></Header></Table.Cell>
                     <Table.Cell><Header
                         as='h4'
-                        textAlign="center"><Header.Subheader>{p.type}</Header.Subheader></Header></Table.Cell>
+                        textAlign="center"><Header.Subheader>{p.type}{p.multiple ? "[]" : ""}</Header.Subheader></Header></Table.Cell>
                     <Table.Cell textAlign="left">{p.description}
                     </Table.Cell>
                 </Table.Row>

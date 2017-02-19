@@ -10,7 +10,7 @@ import java.util.Map;
 public class Property {
     private String name;
     private String type;
-    private String constraints;
+    private boolean multiple;
     private String description;
 
     public Property() {
@@ -57,11 +57,11 @@ public class Property {
         this.description = description;
     }
 
-    public String getConstraints() {
-        return constraints;
+    public boolean isMultiple() {
+        return multiple;
     }
 
-    public void setConstraints(String constraints) {
-        this.constraints = constraints;
+    public void setMultiple(boolean multiple) {
+        this.multiple = multiple;
     }
 }
